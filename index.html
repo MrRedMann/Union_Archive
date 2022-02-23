@@ -1,3 +1,161 @@
 <html>
-  <p> Hello World </p>
+    <head>
+        <style>
+            body {
+                background-image: url("https://cdn.pixabay.com/photo/2017/08/30/12/23/black-2696879_960_720.jpg");
+                text-align: left;
+                font-family: "Courier New", 'Courier New', Courier, serif;
+                color: rgb(198, 204, 204);
+            }
+
+            th, h3, p {
+                font-family: "Courier New", 'Courier New', Courier, serif;
+                color: rgb(198, 204, 204);
+            }
+
+            th {
+                font-size: 15px;
+                padding-right: 5px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            #characteristics {
+                text-align: left;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: 3.25fr 3.5fr 3.25fr ;
+                grid-template-rows: 50px auto 50px  ;
+                gap: 10px;
+                background: rgba(34, 34, 34, 0.75);
+                padding: 10px;
+                height: 100%;
+            }
+
+            .header {
+                grid-area: 1 / 2 / 1 / 3;
+            }
+
+            .footer {
+                grid-area: 3 / 2 / 3 / 3;
+            }
+
+            .lside {
+                grid-area: 1 / 1 / 4 / 2;
+            }
+            
+            .rside {
+                grid-area: 1 / 3 / 4 / 4;
+            }
+
+            .inner-container {
+                grid-area: 2 / 2 / 3 / 3;
+
+                display: grid;
+                grid-template-columns: 250px auto;
+                grid-template-rows: 275px auto;
+                background: rgba(34, 34, 34);
+
+                padding: 2px;
+                border-style: ridge;
+                border-width: 5px;
+                border-color: rgba(73, 73, 73);
+            }
+
+            .grid-item {
+                padding: 5px;
+            }
+
+            .picture {
+                grid-area: 1 / 1;
+                background: rgba(73, 73, 73, 0.8);
+            }
+
+            .picture, .profile, .profile_bio, .profile_bio2 {
+                border-style: double;
+                border-width: 5px;
+                border-color: rgb(22, 22, 22);
+            }
+            
+            .profile, .profile_bio, .profile_bio2 {
+                background: rgba(73, 73, 73, 0.5);
+                overflow: visible;
+                padding-left: 5px;
+
+            }
+
+            .profile {
+                grid-area: 1 / 2 / 1 / 3;
+            }
+
+            .profile_bio {
+                grid-area: 2 / 1 / 3 / 3;
+            }
+
+            .profile_bio2 {
+                grid-area: 3 / 1 / 4 / 3;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <div class="header"></div>
+
+            <div class="inner-container">
+                <div class="picture"><img src="https://www.maryriverdental.com.au/wp-content/uploads/2017/04/Placeholder-Portrait.jpg" alt="Portrait of Individual", width="240px", height="265px">
+                </div>
+                <div class="profile">     
+                    <table style="text-align: left; width: 100%">
+                        <tr>
+                            <th>[FULL NAME]:</th>
+                            <th style="text-align: right">HENRI ADRIEN</th>
+                        </tr>
+                        <tr>
+                            <th>[DATE OF BIRTH]:</th>
+                            <th style="text-align: right">25/06/1999</th>
+                        </tr>
+                        <tr>
+                            <th>[NATIONALITY]:</th>
+                            <th style="text-align: right">FRENCH</th>
+                        </tr>
+                        <tr>
+                            <th>[LOYALTY TIER]:</th>
+                            <th style="text-align: right">N/A</th>
+                        </tr>
+                        <tr>
+                            <th>[OCCUPATION]:</th>
+                            <th style="text-align: right">CIVIL AUTHORITY</th>
+                        </tr>
+                        <tr><th><br></th></tr>
+                    </table>
+                    <p><b><var style="font-size: 15px;">[PHYSICAL DESCRIPTION]>:</b><br>
+                    </p>
+                </div>
+                <div class="profile_bio"><p>
+                    <var style="font-size: 20px">[INTRODUCTION]</var><br>
+                    An ideologically invested individual, with a disregard for culture and nationality alike. A frequent wine drinker, and a questionably sociable Frenchman. <br><br>
+                    On the 29th of January 2028, Councillor Henri Adrien was exiled to a labour camp by Chancellor Asano after he was found to be influencing the Tribune Election, additionally violating the Palace Arrest imposed on him. The fate of the Councillor remains unknown, leaving the party stranded without a proper successor to the party.
+                    </p>
+                </div>
+                <div class="profile_bio2"><p>
+                    <var style="font-size: 20px">[NOTES]</var><br>
+                        Councillor Henri Adrien was caught by the Overwatch Transhuman Arm, as he attempted to contact the locals through a radio on the Union Frequency; while under a Palace arrest issued by the Chancellor. The recent decision of Chancellor Asano proclaimed that Councillor Henri Adrien was to be sentenced to a labour camp, as a result of his: attempts in influencing the Tribune Elections through a forceful selection of candidacy, and neglecting the aforementioned sanctions imposed on him. The length of the sentencing is unknown.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer"></div>
+            <div class="lside"></div>
+            <div class="rside"></div>
+        </div>
+
+    </body>
+
 </html>
